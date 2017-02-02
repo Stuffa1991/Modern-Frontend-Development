@@ -1,10 +1,12 @@
-/**
- *
- * MAIN SASS FILE
- * Include everything in here
- * 
- */
+
+//MAIN SASS FILE
+//Include everything in here
 @import "bourbon/bourbon";
+
+$background-color: white;
+$primary-text-color: #7e7f84;
+
+@import "partials/base";
 
 //Nav
 @import "partials/nav";

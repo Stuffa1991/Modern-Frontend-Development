@@ -1,9 +1,55 @@
-/**
- *
- * MAIN SASS FILE
- * Include everything in here
- * 
- */
+/* BASE */
+body {
+  background-color: white;
+  color: #7e7f84;
+  font-family: 'PT Sans', Arial; }
+
+/* NAV */
+.uppernav {
+  margin-top: 25px;
+  border-bottom: 1px solid #c7c7c7; }
+  .uppernav .icons {
+    letter-spacing: 2px;
+    display: inline;
+    padding-right: 18px;
+    vertical-align: middle; }
+    .uppernav .icons a {
+      color: #7e7f84;
+      background-color: #ededed;
+      padding: 8px 19px; }
+
+nav {
+  background-color: white;
+  height: 40px;
+  border-bottom: 6px solid #f45a40;
+  margin-top: 12px;
+  margin-bottom: 15px; }
+  nav .nav-item {
+    text-transform: uppercase;
+    line-height: normal;
+    padding-right: 60px; }
+    nav .nav-item a {
+      color: #7e7f84; }
+      nav .nav-item a:active, nav .nav-item a:hover {
+        color: #f45a40;
+        background-color: white; }
+  nav form {
+    line-height: normal; }
+    nav form #search-icon {
+      color: #7e7f84;
+      font-size: 1.4rem;
+      width: 1rem;
+      line-height: normal; }
+    nav form #search-input {
+      height: inherit;
+      margin: 0;
+      color: #7e7f84;
+      border-bottom: 0;
+      padding-left: 2rem; }
+    nav form #search-label {
+      left: 0rem; }
+
+/* FOOTER */
 body {
   display: flex;
   min-height: 100vh;

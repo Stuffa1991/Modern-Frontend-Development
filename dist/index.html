@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title></title>
 		<!--Import Google Icon Font-->
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		
 		<link rel="stylesheet" href="../app/bower_components/materialize/dist/css/materialize.min.css">
 		<link rel="stylesheet" href="assets/stylesheets/main.css">
@@ -14,36 +15,60 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
-	
-	<nav>
-		<div class="container">
+		
+		<div class="container uppernav">
 			<div class="row">
-				<div class="col s12">
-					<div class="nav-wrapper">
-					<a href="#" class="brand-logo">Logo</a>
-						<ul id="nav-mobile" class="right hide-on-med-and-down">
-							<li><a href="sass.html">Sass</a></li>
-							<li><a href="badges.html">Components</a></li>
-							<li><a href="collapsible.html">JavaScript</a></li>
-						</ul>
+				<div class="col s3 uppernav_logo">
+					<img src="assets/images/logo.png" alt="">
+				</div>
+				<div class="col s6 push-s3 uppernav_details vertical">
+					
+					<p class="icons"><i class="tiny material-icons icons">phone_forwarded</i> +45 22660077</p>
+					<p class="icons"><i class="tiny material-icons">email</i> Lorem@ipsum.com</p>
+					<p class="icons"><a href="#"><i class="tiny material-icons">shopping_basket</i> 99.54$ Checkout</a></p>
+					
+				</div>
+			</div>
+		</div>
+		<nav class="z-depth-0">
+			<div class="container">
+				<div class="row">
+					<div class="col s10">
+						<div class="nav-wrapper">
+							<ul>
+								<li class="nav-item"><a href="#">Home</a></li>
+								<li class="nav-item"><a href="#">Men</a></li>
+								<li class="nav-item"><a href="#">Women</a></li>
+								<li class="nav-item"><a href="#">Kids</a></li>
+								<li class="nav-item"><a href="#">Sale</a></li>
+								<li class="nav-item"><a href="#">About Us</a></li>
+								<li class="nav-item"><a href="#">Support</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col s2">
+						<form action="#" accept-charset="utf-8">
+							<div class="row">
+								<div class="input-field col s12">
+									<i id="search-icon" class="tiny material-icons prefix">search</i><input id="search-input" type="search" value="" class="validate"><label id="search-label" for="icon_prefix">Search..</label>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
-		</div>
-	</nav>
-
-	<header class="">
-		<div class="container">
-			<div class="row">
-				<div class="col s12">
-					Header
+		</nav>
+		<header class="">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						Header
+					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<!-- /header -->
-
-	<main>
+		</header>
+		<!-- /header -->
+		<main>
 		<div class="container">
 			<div class="row">
 				<div class="col s12">
@@ -51,21 +76,20 @@
 				</div>
 			</div>
 		</div>
-	</main>
-	<!-- /main -->
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col s12">
-					Footer
+		</main>
+		<!-- /main -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						Footer
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<!-- /footer-->
-	
-	<script src="../app/bower_components/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../app/bower_components/materialize/dist/js/materialize.min.js" type="text/javascript" charset="utf-8"></script>
-</body>
+		</footer>
+		<!-- /footer-->
+		
+		<script src="../app/bower_components/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../app/bower_components/materialize/dist/js/materialize.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
 </html>

@@ -1,0 +1,55 @@
+/* NAV */
+
+.uppernav {
+	@include margin(25px null null null);
+	border-bottom: 1px solid #c7c7c7;
+	.icons {
+		letter-spacing: 2px;
+		display: inline;
+		@include padding(null 18px null null);
+    	vertical-align: middle;
+    	a {
+    		color: $primary-text-color;
+    		background-color: #ededed;
+    		@include padding(8px 19px 8px 19px);
+    	}
+	}
+}
+
+nav {
+	background-color: $background-color;
+	height: 40px;
+	border-bottom: 6px solid #f45a40;
+	@include margin(12px null 15px null);
+	.nav-item{
+		text-transform: uppercase;
+		line-height: normal;
+		@include padding(null 60px null null);
+		a{
+			color: $primary-text-color;
+			&:active,&:hover{
+				color:#f45a40;
+				background-color: white;
+			}
+		}
+	}
+	form {
+		#search-icon {
+			color: $primary-text-color;
+			font-size: 1.4rem;
+			width: 1rem;
+			line-height: normal;
+		}
+		line-height: normal;
+		#search-input {
+			height: inherit;
+			margin: 0;
+			color: $primary-text-color;
+			border-bottom: 0;
+			padding-left: 2rem;
+		}
+		#search-label {
+			left: 0rem;
+		}
+	}
+}
