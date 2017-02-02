@@ -16,3 +16,5 @@ gulp compress - Minifies all js files + jshint's them
 ```
 gulp html - Livereloads all html files
 ```
+
+The default task watches all the above, so simply doing `gulp` will be sufficient.
