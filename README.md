@@ -7,6 +7,12 @@ Using Gulp, NPM, Sass
 ##GULP
 
 1. Task'
-`gulp sass` - Compiles all sass files
-`gulp compress` - Minifies all js files + jshint's them
-`gulp html` - Livereloads all html files
+```
+gulp sass - Compiles all sass files
+```
+```
+gulp compress - Minifies all js files + jshint's them
+```
+```
+gulp html - Livereloads all html files
+```
