@@ -1,10 +1,11 @@
 'use strict';
  
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const uglify = require('gulp-uglify');
-const eslint = require('gulp-eslint');
-const sourcemaps = require('gulp-sourcemaps');
+const gulp = require('gulp'),
+	sass = require('gulp-sass'),
+	uglify = require('gulp-uglify'),
+	eslint = require('gulp-eslint'),
+	sourcemaps = require('gulp-sourcemaps'),
+	connect = require('gulp-connect');
 
 gulp.task('sass', function () {
 	return gulp.src('./app/sass/**/*.scss')
@@ -22,7 +23,23 @@ gulp.task('compress', function () {
 		.pipe(gulp.dest('./dist/javascript'));
 });
 
-gulp.task('default',['sass', 'compress'], function() {
+gulp.task('html', function () {
+  gulp.src('./dist/*.html')
+    .pipe(connect.reload());
+});
+
+gulp.task('connect', function() {
+  connect.server({
+    livereload: true
+  });
+});
+
+gulp.task('watch', function() {
     gulp.watch('./app/sass/**/*.scss', ['sass']);
     gulp.watch('./app/js/**/*.js', ['compress']);
+    gulp.watch('./dist/index.html', ['html']);
+});
+
+gulp.task('default',['sass', 'compress', 'html', 'watch', 'connect'], function() {
+
 });
