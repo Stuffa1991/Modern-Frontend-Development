@@ -2,7 +2,7 @@
 
 Second semester project - Modern Frontend
 
-Using Gulp, NPM, Sass
+Using Gulp, NPM, Sass, Bower
 
 ##GULP
 
