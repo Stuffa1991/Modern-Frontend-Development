@@ -1,0 +1,29 @@
+{
+  "name": "modern-frontend-development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stuffa1991/Modern-Frontend-Development.git"
+  },
+  "author": "Staffan Enemark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stuffa1991/Modern-Frontend-Development/issues"
+  },
+  "homepage": "https://github.com/Stuffa1991/Modern-Frontend-Development#readme",
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-google": "^0.7.1",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^2.0.1",
+    "pump": "^1.0.2"
+  }
+}
