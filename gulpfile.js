@@ -3,9 +3,9 @@
 const gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	uglify = require('gulp-uglify'),
-	eslint = require('gulp-eslint'),
 	sourcemaps = require('gulp-sourcemaps'),
-	connect = require('gulp-connect');
+	connect = require('gulp-connect'),
+	jshint = require('gulp-jshint');
 
 gulp.task('sass', function () {
 	return gulp.src('./app/sass/**/*.scss')
@@ -17,8 +17,8 @@ gulp.task('sass', function () {
 gulp.task('compress', function () {
 	return gulp.src('./app/js/**/*.js')
 		.pipe(sourcemaps.init())
-		// .pipe(eslint())
-		// .pipe(eslint.format())
+		.pipe(jshint())
+    	.pipe(jshint.reporter('jshint-stylish'))
 		.pipe(uglify())
 		.pipe(gulp.dest('./dist/javascript'));
 });
