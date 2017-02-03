@@ -38,7 +38,7 @@ gulp.task('connect', function() {
 gulp.task('watch', function() {
     gulp.watch('./app/sass/**/*.scss', ['sass']);
     gulp.watch('./app/js/**/*.js', ['compress']);
-    gulp.watch('./dist/index.html', ['html']);
+    gulp.watch('./dist/**/*.html', ['html']);
 });
 
 gulp.task('default',['sass', 'compress', 'html', 'watch', 'connect'], function() {
