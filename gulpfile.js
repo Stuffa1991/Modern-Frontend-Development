@@ -19,7 +19,7 @@ gulp.task('compress', function () {
 	return gulp.src('./app/js/**/*.js')
 		.pipe(sourcemaps.init())
 		.pipe(jshint())
-    	.pipe(jshint.reporter('jshint-stylish'))
+    	.pipe(jshint.reporter('default'))
 		.pipe(uglify())
 		.pipe(gulp.dest('./dist/javascript'));
 });

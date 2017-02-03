@@ -9,9 +9,8 @@ body {
   margin-top: 25px;
   border-bottom: 1px solid #c7c7c7; }
   .uppernav .icons {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     display: inline;
-    padding-right: 18px;
     vertical-align: middle; }
     .uppernav .icons a {
       color: #7e7f84;

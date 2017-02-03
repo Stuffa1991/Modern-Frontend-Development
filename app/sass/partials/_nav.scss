@@ -4,9 +4,8 @@
 	@include margin(25px null null null);
 	border-bottom: 1px solid #c7c7c7;
 	.icons {
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		display: inline;
-		@include padding(null 18px null null);
     	vertical-align: middle;
     	a {
     		color: $primary-text-color;
