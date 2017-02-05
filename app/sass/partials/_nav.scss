@@ -17,7 +17,7 @@
 
 nav {
 	background-color: $background-color;
-	height: 40px;
+	max-height: 40px;
 	border-bottom: 6px solid #f45a40;
 	@include margin(12px null 15px null);
 	.nav-item{
