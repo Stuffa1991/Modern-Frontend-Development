@@ -1,5 +1,60 @@
 /* FOOTER */
 
+.newsletter {
+	background-color: $orange-color;
+	color: #FFFFFF;
+
+	.row {
+		@include padding(20px null null null);
+	}
+
+	h5 {
+		text-transform: uppercase;
+	}
+
+	.newsletter-signup{
+		input{
+			@include padding(null 10px null 10px);
+			background-color: #FFFFFF;
+			width: 240px;
+		}
+		button {
+			@include margin(null null null 6px);
+			vertical-align: middle;
+			background-color: #ff674f;
+		}
+	}
+}
+
+footer {
+	background-color: #2a2d34;
+
+	.row {
+		@include padding(20px null null null);
+	}
+
+	h5 {
+		color: #FFFFFF;
+		text-transform: uppercase
+	}
+
+	.blog-posts{
+		h6 {
+			color: #FFFFFF;
+		}
+	}
+
+	.support {
+		a {
+			color: #7e7f84;
+			display: table;
+			&:hover, &:active {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
 body {
 	display: flex;
 	min-height: 100vh;

@@ -1,6 +1,7 @@
 main {
 	margin-top:65px;
-
+	
+	//Categories over popular products
 	.card-title{
 		a {
 			text-transform: uppercase;
@@ -18,7 +19,7 @@ main {
 		overflow: hidden;
     	text-align: center;
     	&:before, &:after {
-    		background-color: #eeeeee;
+    		background-color: $grey-color;
 		    content: "";
 		    display: inline-block;
 		    height: 1px;
@@ -33,6 +34,66 @@ main {
 		&:after {
 			left: 0.5em;
     		margin-right: -50%;
+		}
+	}
+	
+	//Product
+	.product {
+		//stars
+		.product-rating {
+			position: absolute;
+			padding:10px;
+			i {
+				color: $orange-color;
+				width: 16px;
+
+				&:hover, &:active {
+					color: $grey-color;
+					cursor: pointer;
+				}
+			}
+		}
+
+		//Content
+		.card-content {
+			border: 1px solid $grey-color;
+		    padding: 0px;
+			
+			img{
+				border-top: 1px solid $grey-color;
+				padding: 20px;
+			}
+		    p {
+		    	border-top: 1px solid $grey-color;
+		    	@include padding(20px 10px 20px 10px);
+		    }
+		}
+		
+		.product-info {
+			border-top: 1px solid $grey-color;
+			@include margin(null 20px null 10px);
+			@include padding(10px null 15px null);
+
+			.product-price {
+				color: $orange-color;
+			}
+
+			.product-favorite {
+				
+			}
+
+		}
+
+		//Buy now - popular products
+		.card-action{
+			a {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				border-radius: 0px;
+				background-color: $orange-color;
+			}
 		}
 	}
 }

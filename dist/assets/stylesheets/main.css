@@ -75,8 +75,73 @@ main {
     main .popular-products-title:after {
       left: 0.5em;
       margin-right: -50%; }
+  main .product .product-rating {
+    position: absolute;
+    padding: 10px; }
+    main .product .product-rating i {
+      color: #f45a40;
+      width: 16px; }
+      main .product .product-rating i:hover, main .product .product-rating i:active {
+        color: #eeeeee;
+        cursor: pointer; }
+  main .product .card-content {
+    border: 1px solid #eeeeee;
+    padding: 0px; }
+    main .product .card-content img {
+      border-top: 1px solid #eeeeee;
+      padding: 20px; }
+    main .product .card-content p {
+      border-top: 1px solid #eeeeee;
+      padding: 20px 10px; }
+  main .product .product-info {
+    border-top: 1px solid #eeeeee;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px; }
+    main .product .product-info .product-price {
+      color: #f45a40; }
+  main .product .card-action a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0px;
+    background-color: #f45a40; }
 
 /* FOOTER */
+.newsletter {
+  background-color: #f45a40;
+  color: #FFFFFF; }
+  .newsletter .row {
+    padding-top: 20px; }
+  .newsletter h5 {
+    text-transform: uppercase; }
+  .newsletter .newsletter-signup input {
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #FFFFFF;
+    width: 240px; }
+  .newsletter .newsletter-signup button {
+    margin-left: 6px;
+    vertical-align: middle;
+    background-color: #ff674f; }
+
+footer {
+  background-color: #2a2d34; }
+  footer .row {
+    padding-top: 20px; }
+  footer h5 {
+    color: #FFFFFF;
+    text-transform: uppercase; }
+  footer .blog-posts h6 {
+    color: #FFFFFF; }
+  footer .support a {
+    color: #7e7f84;
+    display: table; }
+    footer .support a:hover, footer .support a:active {
+      text-decoration: underline; }
+
 body {
   display: flex;
   min-height: 100vh;
