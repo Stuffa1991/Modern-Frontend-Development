@@ -21,7 +21,7 @@ gulp.task('compress', function () {
 		.pipe(jshint())
     	.pipe(jshint.reporter('default'))
 		.pipe(uglify())
-		.pipe(gulp.dest('./dist/javascript'));
+		.pipe(gulp.dest('./dist/assets/javascript'));
 });
 
 gulp.task('html', function () {

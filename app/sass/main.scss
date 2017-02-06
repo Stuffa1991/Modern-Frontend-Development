@@ -6,12 +6,19 @@
 
 $background-color: white;
 $primary-text-color: #7e7f84;
+$orange-color: #f45a40;
 
 //Base
 @import "partials/base";
 
 //Nav
 @import "partials/nav";
+
+//Slider
+@import "partials/slider";
+
+//Main
+@import "partials/main";
 
 //Footer
 @import "partials/footer";

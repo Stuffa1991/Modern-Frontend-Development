@@ -1,0 +1,38 @@
+main {
+	margin-top:65px;
+
+	.card-title{
+		a {
+			text-transform: uppercase;
+			color: $orange-color;
+
+			&:hover, &:active {
+				color: darken($orange-color, 10%);
+				text-decoration: underline;
+			}
+		}
+		@include padding(10px null 10px null);
+	}
+
+	.popular-products-title {
+		overflow: hidden;
+    	text-align: center;
+    	&:before, &:after {
+    		background-color: #eeeeee;
+		    content: "";
+		    display: inline-block;
+		    height: 1px;
+		    position: relative;
+		    vertical-align: middle;
+		    width: 10%;
+    	}
+		&:before {
+			right: 0.5em;
+    		margin-left: -50%;
+		}
+		&:after {
+			left: 0.5em;
+    		margin-right: -50%;
+		}
+	}
+}

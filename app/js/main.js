@@ -1,3 +1,4 @@
-console.log('Hej');
-
-console.log('Hello');
+$(document).ready(function(){
+	//Slider functionality
+	$('.carousel.carousel-slider').carousel({fullWidth: true});
+});

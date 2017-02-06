@@ -18,8 +18,8 @@
 nav {
 	background-color: $background-color;
 	max-height: 40px;
-	border-bottom: 6px solid #f45a40;
-	@include margin(12px null 15px null);
+	border-bottom: 6px solid $orange-color;
+	@include margin(12px null null null);
 	.nav-item{
 		text-transform: uppercase;
 		line-height: normal;
@@ -27,7 +27,7 @@ nav {
 		a{
 			color: $primary-text-color;
 			&:active,&:hover{
-				color:#f45a40;
+				color:$orange-color;
 				background-color: white;
 			}
 		}
