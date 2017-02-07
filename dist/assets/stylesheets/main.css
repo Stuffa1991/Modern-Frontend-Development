@@ -47,6 +47,9 @@ nav {
     nav form #search-label {
       left: 0rem; }
 
+.carousel-slider {
+  min-height: 600px; }
+
 main {
   margin-top: 65px; }
   main .card-title {
@@ -101,6 +104,8 @@ main {
     padding-bottom: 15px; }
     main .product .product-info .product-price {
       color: #f45a40; }
+    main .product .product-info .product-favorite i {
+      cursor: pointer; }
   main .product .card-action a {
     position: absolute;
     bottom: 0;
