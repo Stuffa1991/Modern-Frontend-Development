@@ -1,0 +1,143 @@
+.product-page {
+	
+	.product-showcase {
+
+		.product-large {
+			cursor: pointer;
+			min-height: 570px;
+			border: 1px solid #c7c7c7;
+			width: auto;
+
+			img {
+				margin: 0 auto;
+				max-height: 569px;
+				width: auto;
+			}
+		}
+
+		.product-small {
+			cursor: pointer;
+			border: 1px solid #c7c7c7;
+			min-height: 175px;
+			width: auto;
+
+			img {
+				margin: 0 auto;
+				width: 100%;
+				max-height: 172px;
+			} 
+		}
+
+		.active {
+			border: 1px solid $orange-color;
+		}
+	}
+
+	h5{
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	.product-price {
+		font-weight: 600;
+		letter-spacing: 0.3125rem;
+		font-size: 2.5rem;
+		text-align: right;
+	}
+
+	.product-original-price {
+		font-size: 1.5rem;
+		text-align: right;
+		text-decoration: line-through;
+	}
+
+	.product-saving {
+		font-size: 1.25rem;
+		text-align: right;
+		.percent {
+			font-style: italic;
+		}
+	}
+
+	.product-card-options {
+		@include padding(50px null null null);
+
+		.card-size {
+			font-weight: 600;
+			font-size: 1.25rem;
+		}
+
+		.card-amount {
+			font-weight: 600;
+			font-size: 1.25rem;
+		}
+
+		.amount {
+			text-align: center;
+			border: 1px solid #7e7f84;
+			@include placeholder {
+				color: #7e7f84;
+			}
+		}
+
+		select {
+			border: 1px solid #7e7f84;
+			-webkit-appearance: none;
+		    -moz-appearance: none;
+		    text-indent: 1px;
+		    text-overflow: '';
+		}
+	}
+
+	.btn {
+		background-color: $orange-color;
+		font-weight: bold;
+		font-size: 1.75rem;
+		height: 55px;
+		width: 275px;
+	}
+	
+	.tab-select {
+		border-bottom: 1px solid #cccccc;
+	}
+
+	.tab-content {
+		margin-top: 34px;
+	}
+
+	.tabs {
+		height: 70px;
+		margin-top: 18px;
+
+		.tab {
+			@include margin(null 4px null 4px);
+			height: 70px;
+			max-width: 200px;
+		}
+
+		a {
+			text-transform: none;
+			font-size: 1.5rem;
+			border-radius: 8px 8px 0px 0px;
+			border: 1px solid #cccccc;
+			border-bottom: none;
+			line-height: 75px;
+
+			&:not(.active) {
+				background-color: #f2f1f1;
+			}
+
+			&.active {
+				background-color: none;
+	    		color: $orange-color;
+			}
+		}
+
+		.indicator {
+			top: 0px;
+			background-color: $orange-color;
+			border-radius: 8px 8px 0px 0px;
+			height: 10px;
+		}
+	}
+}

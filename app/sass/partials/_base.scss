@@ -2,5 +2,14 @@
 body {
 	background-color: $background-color;
 	color: $primary-text-color;
+	font-family: Arial;
+	font-size: 1em; //16px
+}
+
+h1, h2, h3, h4 ,h5 ,h6 {
 	font-family: 'PT Sans', Arial;
+}
+
+p {
+	font-family: Arial;
 }

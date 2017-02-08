@@ -1,7 +1,6 @@
 //MAIN SASS FILE
 //Include everything in here
 @import "bourbon/bourbon";
-@import "sass-mediaqueries/media-queries";
 
 //Bourbon - false if disabled
 $prefix-for-webkit:    true;
@@ -26,6 +25,9 @@ $grey-color: #eeeeee;
 
 //Main
 @import "partials/main";
+
+//Product page
+@import "partials/product-page";
 
 //Footer
 @import "partials/footer";

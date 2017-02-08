@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".carousel.carousel-slider").carousel({fullWidth:!0})});
+$(document).ready(function(){$(".carousel.carousel-slider").carousel({fullWidth:!0}),$("select").material_select(),$("ul.tabs").tabs()});
